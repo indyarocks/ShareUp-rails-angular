@@ -1,0 +1,19 @@
+@import 'bootstrap';
+
+#dashboard-container {
+	ul {
+		list-style-type:none;
+
+		.row {
+		  border-radius:5px;
+		  background:#eee;
+		}
+
+		li {
+		  margin: 10px;
+		  border-radius: 5px;
+		  box-shadow: 5px 5px 10px #888888;
+		}
+	}
+}
+

@@ -1,0 +1,22 @@
+<div id='dashboard-container'>
+	<ul>
+	  <li ng-repeat="article in articles | orderBy: publishedDate:false">	  	
+	    <div class='row show-grid'>  	
+	  	    <div class='article-listing'>
+	  	     <div class="col-md-9">
+	  	  	  <h4>
+	  	  	    <a href="{{article.link}}"
+	  	  	     title="{{article.title}}"
+	  	  	     target="_blank">
+	  	  	     {{article.title}}
+	  	  	    </a>
+	  	      </h4>
+	  	      </div>
+	  	      <div class="col-md-3">	
+		  	    {{article.publishedDate | date:"M/d/yy h:mm:ss a"}}
+	  	    </div>	
+		  </div>
+	    </div>	
+	  </li>		
+	</ul>
+</div>
