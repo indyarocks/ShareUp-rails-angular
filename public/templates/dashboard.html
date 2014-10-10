@@ -1,9 +1,10 @@
+<h2>Welcome back {{ user.name }}</h2>
 <div id='dashboard-container'>
 	<ul>
 	  <li ng-repeat="article in articles | orderBy: publishedDate:false">	  	
 	    <div class='row show-grid'>  	
 	  	    <div class='article-listing'>
-	  	     <div class="col-md-9">
+	  	     <div class="col-md-9 padding-medium">
 	  	  	  <h4>
 	  	  	    <a href="{{article.link}}"
 	  	  	     title="{{article.title}}"
